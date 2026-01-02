@@ -1,4 +1,4 @@
-/* Modern Navbar with Property Pulse Branding */
+/* navbar css */
 .navbar {
   position: fixed;
   top: 0;
@@ -32,32 +32,6 @@
   image-rendering: crisp-edges;
 }
 
-
-/* Very Light Overlay - Image Much More Visible */
-.navbar-bg-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    135deg, 
-    rgba(30, 58, 138, 0.30) 0%, 
-    rgba(30, 41, 59, 0.35) 50%,
-    rgba(30, 58, 138, 0.30) 100%
-  );
-  transition: all 0.2s ease; /* CHANGE THIS: faster transition */
-  z-index: 1;
-}
-
-.navbar.scrolled .navbar-bg-overlay {
-  background: linear-gradient(
-    135deg, 
-    rgba(30, 58, 138, 0.35) 0%, 
-    rgba(30, 41, 59, 0.40) 50%,
-    rgba(30, 58, 138, 0.35) 100%
-  );
-}
 
 .navbar-container {
   position: relative;
