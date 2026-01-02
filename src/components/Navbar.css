@@ -32,9 +32,6 @@
   image-rendering: crisp-edges;
 }
 
-.navbar.scrolled .navbar-bg-image {
-  opacity: 1;
-}
 
 /* Very Light Overlay - Image Much More Visible */
 .navbar-bg-overlay {
