@@ -4,7 +4,8 @@
   min-height: 100vh;
   background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f0f9ff 100%);
   gap: 0;
-  padding-top: 285px; /* Tiny gap - 280px navbar + 5px only */
+  padding-top: 310px; /* Tiny gap - 280px navbar + 5px only */
+  align-items: flex-start;
 }
 
 /* Main Content Area */
@@ -314,10 +315,11 @@
   border-left: 1px solid #e5e7eb;
   padding: 30px 20px 30px 15px;
   position: sticky;
-  top: 450px;
-  max-height: calc(200vh - 285px);
+  top: 100px;
+  max-height: calc(100vh - 285px);
   display: flex;
   flex-direction: column;
+  align-self: flex-start;
 }
 
 .sidebar-title {
