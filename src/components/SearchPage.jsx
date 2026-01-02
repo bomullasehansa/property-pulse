@@ -14,7 +14,6 @@ const SearchPage = () => {
     addedFrom: "",
     addedTo: "",
   });
-
   const [properties, setProperties] = useState([]);
   const [filteredProperties, setFilteredProperties] = useState([]);
   const [favourites, setFavourites] = useState(() => {
