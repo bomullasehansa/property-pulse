@@ -1,0 +1,254 @@
+/* Modern Navbar with Property Pulse Branding */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: all 0.2s ease; /* CHANGE THIS: 0.4s → 0.2s for faster scroll */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: 350px;
+}
+
+.navbar.scrolled {
+  height: 90px;
+}
+
+/* Background Image Layer - Much Clearer, No Stretch */
+.navbar-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/nav-bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease; /* CHANGE THIS: faster transition */
+  z-index: 0;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+.navbar.scrolled .navbar-bg-image {
+  opacity: 1;
+}
+
+/* Very Light Overlay - Image Much More Visible */
+.navbar-bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg, 
+    rgba(30, 58, 138, 0.30) 0%, 
+    rgba(30, 41, 59, 0.35) 50%,
+    rgba(30, 58, 138, 0.30) 100%
+  );
+  transition: all 0.2s ease; /* CHANGE THIS: faster transition */
+  z-index: 1;
+}
+
+.navbar.scrolled .navbar-bg-overlay {
+  background: linear-gradient(
+    135deg, 
+    rgba(30, 58, 138, 0.35) 0%, 
+    rgba(30, 41, 59, 0.40) 50%,
+    rgba(30, 58, 138, 0.35) 100%
+  );
+}
+
+.navbar-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 5%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Brand Section */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.2s ease; /* CHANGE THIS: faster transition */
+}
+
+.navbar.scrolled .navbar-brand {
+  gap: 12px;
+}
+
+/* Brand Icon */
+.brand-icon {
+  color: #fbbf24;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.8));
+  transition: all 0.2s ease; /* CHANGE THIS: faster transition */
+}
+
+.navbar.scrolled .brand-icon {
+  width: 32px;
+  height: 32px;
+}
+
+/* Brand Content */
+.brand-content {
+  transition: all 0.2s ease; /* CHANGE THIS: faster transition */
+}
+
+/* Property Pulse Title - Attractive Colors */
+.brand-title {
+  font-size: 4.5rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1;
+  display: flex;
+  gap: 15px;
+  text-shadow: 
+    0 4px 12px #fbbf24(0, 0, 0, 0.8),
+}
+
+.navbar.scrolled .brand-title {
+  font-size: 1.6rem;
+  gap: 6px;
+}
+
+/* "Property" - White with Strong Shadow */
+.title-property {
+  color: #ffffff;
+  letter-spacing: -2px;
+}
+
+/* "Pulse" - Gold without Glow */
+.title-pulse {
+  color: #fbbf24; /* Solid gold fallback */
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #fbbf24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -2px;
+}
+
+/* Tagline */
+.brand-tagline {
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin: 10px 0 0 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 
+    0 3px 10px rgba(0, 0, 0, 0.8),
+    0 2px 4px rgba(0, 0, 0, 1);
+  transition: all 0.2s ease; /* CHANGE THIS: faster transition */
+}
+
+.navbar.scrolled .brand-tagline {
+  font-size: 0.8rem;
+  margin: 3px 0 0 0;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .navbar {
+    height: 220px;
+  }
+
+  .navbar.scrolled {
+    height: 80px;
+  }
+
+  .brand-title {
+    font-size: 3.5rem;
+    gap: 12px;
+  }
+
+  .navbar.scrolled .brand-title {
+    font-size: 1.4rem;
+  }
+
+  .brand-tagline {
+    font-size: 1.1rem;
+  }
+
+  .navbar.scrolled .brand-tagline {
+    font-size: 0.75rem;
+  }
+
+  .brand-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .navbar.scrolled .brand-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 180px;
+  }
+
+  .navbar.scrolled {
+    height: 70px;
+  }
+
+  .brand-title {
+    font-size: 2.8rem;
+  }
+
+  .navbar.scrolled .brand-title {
+    font-size: 1.2rem;
+  }
+
+  .brand-tagline {
+    font-size: 1rem;
+  }
+
+  .navbar.scrolled .brand-tagline {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    height: 150px;
+  }
+
+  .brand-title {
+    font-size: 2.2rem;
+    gap: 8px;
+  }
+
+  .navbar.scrolled .brand-title {
+    font-size: 1rem;
+    gap: 4px;
+  }
+
+  .brand-tagline {
+    font-size: 0.85rem;
+  }
+
+  .navbar.scrolled .brand-tagline {
+    font-size: 0.65rem;
+  }
+
+  .brand-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .navbar.scrolled .brand-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
