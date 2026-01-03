@@ -119,6 +119,14 @@ const SearchPage = () => {
       addedTo: "",
     });
     setFilteredProperties(properties);
+
+  // Scroll to top of search form
+  setTimeout(() => {
+    const searchForm = document.querySelector('.search-form-container');
+    if (searchForm) {
+      searchForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, 100);
   };
 
   const toggleFavourite = (property) => {
