@@ -134,7 +134,7 @@
 			"img7":"/prop5pic7.jpg",
             "floorMap":"/floor05.jpg",
 			"url":"properties/prop5.html",
-            "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2490.123456!2d-0.0167891!3d51.4089234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a82f6b8c9d7e%3A0x2c3d4e5f6a7b8c9d!2sElmwood%20Avenue%2C%20Bromley%20BR3!5e0!3m2!1sen!2suk!4v1735916332926!5m2!1sen!2suk",
+            "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39807.2!2d-0.0667!3d51.4089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8aaa8a7a7a7a7%3A0x123456789abcdef!2sBromley%20BR3!5e0!3m2!1sen!2suk!4v1735922200000!5m2!1sen!2suk",
 			"added": {
                 "month":"January",
                 "day":1,
@@ -190,7 +190,7 @@
 			"img7":"/prop7pic7.jpg",
             "floorMap":"/floor07.jpg",
 			"url":"properties/prop7.html",
-            "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2495.678901!2d0.1889012!3d51.2756789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47df4237b8a7c5d9%3A0x5e6f7a8b9c0d1e2f!2sGreenacre%20Lane%2C%20Sevenoaks%20TN13!5e0!3m2!1sen!2suk!4v1735916456536!5m2!1sen!2suk",
+            "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40320.5!2d0.1889!3d51.2757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47df423a7c8d9e1f%3A0x1a2b3c4d5e6f7a8b!2sSevenoaks%20TN13!5e0!3m2!1sen!2suk!4v1735922300000!5m2!1sen!2suk",
 			"added": {
                 "month":"November",
                 "day":12,
