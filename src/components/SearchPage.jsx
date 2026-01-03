@@ -83,6 +83,7 @@ const SearchPage = () => {
         !filters.maxBedrooms || property.bedrooms <= parseInt(filters.maxBedrooms, 10);
       const matchesPostcode =
         !filters.postcode ||
+        property.postcode.toLowerCase().includes(filters.postcode.toLowerCase()) ||
         property.location.toLowerCase().includes(filters.postcode.toLowerCase());
 
       return (
