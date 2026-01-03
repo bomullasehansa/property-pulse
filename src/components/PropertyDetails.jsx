@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { ArrowLeft, Bed, Bath, MapPin, Maximize } from "lucide-react";
+import { ArrowLeft, Bed, Bath, MapPin, Maximize,} from "lucide-react";
 import "./PropertyDetails.css";
 
 const PropertyDetails = () => {
@@ -109,8 +109,8 @@ const PropertyDetails = () => {
           <div className="prop-card">
             <MapPin size={30} color="#1e3a8a" />
             <div>
-              <p className="prop-card-number">{property.location.split(',')[1]?.trim() || property.location}</p>
-              <p className="prop-card-label">Area</p>
+              <p className="prop-card-number">{property.area} perches</p>
+              <p className="prop-card-label">Land Size</p>
             </div>
           </div>
         </div>
