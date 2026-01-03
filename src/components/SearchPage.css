@@ -4,7 +4,7 @@
   min-height: 100vh;
   background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f0f9ff 100%);
   gap: 0;
-  padding-top: 310px; /* Tiny gap - 280px navbar + 5px only */
+  padding-top: 280px; /* Tiny gap - 280px navbar + 5px only */
   align-items: flex-start;
 }
 
@@ -484,6 +484,10 @@
 }
 
 @media (max-width: 768px) {
+  .search-page-container {
+    padding-top: 90px;
+    }
+
   .main-content {
     padding: 20px;
   }
@@ -506,6 +510,10 @@
 }
 
 @media (max-width: 480px) {
+  .search-page-container {
+    padding-top: 180px; /* 150px navbar + 30px gap */
+  }
+
   .form-title {
     font-size: 20px;
   }
@@ -684,6 +692,7 @@
 @media (max-width: 968px) {
   .property-type-cards {
     grid-template-columns: repeat(2, 1fr);
+    padding-top: 250px;
   }
 
   .gallery-images {
