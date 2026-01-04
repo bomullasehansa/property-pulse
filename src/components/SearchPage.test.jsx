@@ -49,4 +49,15 @@ describe('SearchPage Tests', () => {
     expect(searchBtn).toBeDefined()
   })
 
+  // TEST 5: Reset button exists
+  it('TEST 5: Reset button exists', () => {
+    render(
+      <BrowserRouter>
+        <SearchPage />
+      </BrowserRouter>
+    )
+    const resetBtn = screen.getByRole('button', { name: /Reset/i })
+    expect(resetBtn).toBeDefined()
+  })
+
 })
