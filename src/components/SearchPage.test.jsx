@@ -16,4 +16,15 @@ describe('SearchPage Tests', () => {
     expect(heading).toBeDefined()
   })
 
+  // TEST 2: Property type dropdown exists
+  it('TEST 2: Property type dropdown exists', () => {
+    render(
+      <BrowserRouter>
+        <SearchPage />
+      </BrowserRouter>
+    )
+    const dropdown = screen.getByRole('combobox')
+    expect(dropdown).toBeDefined()
+  })
+
 })
