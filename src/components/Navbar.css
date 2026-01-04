@@ -5,7 +5,7 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  transition: all 0.2s ease; /* CHANGE THIS: 0.4s → 0.2s for faster scroll */
+  transition: all 0.2s ease; 
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   height: 350px;
@@ -25,7 +25,7 @@
   height: 90px;
 }
 
-/* Background Image Layer - Much Clearer, No Stretch */
+/* Background Image Layer  */
 .navbar-bg-image {
   position: absolute;
   top: 0;
@@ -36,7 +36,7 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  transition: all 0.2s ease; /* CHANGE THIS: faster transition */
+  transition: all 0.2s ease; 
   z-index: 0;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
@@ -60,7 +60,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  transition: all 0.2s ease; /* CHANGE THIS: faster transition */
+  transition: all 0.2s ease; /* faster transition */
 }
 
 .navbar.scrolled .navbar-brand {
@@ -71,7 +71,7 @@
 .brand-icon {
   color: #fbbf24;
   filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.8));
-  transition: all 0.2s ease; /* CHANGE THIS: faster transition */
+  transition: all 0.2s ease; 
 }
 
 .navbar.scrolled .brand-icon {
@@ -81,7 +81,7 @@
 
 /* Brand Content */
 .brand-content {
-  transition: all 0.2s ease; /* CHANGE THIS: faster transition */
+  transition: all 0.2s ease; 
 }
 
 /* Property Pulse Title - Attractive Colors */
@@ -127,7 +127,7 @@
   text-shadow: 
     0 3px 10px rgba(0, 0, 0, 0.8),
     0 2px 4px rgba(0, 0, 0, 1);
-  transition: all 0.2s ease; /* CHANGE THIS: faster transition */
+  transition: all 0.2s ease; 
 }
 
 .navbar.scrolled .brand-tagline {

@@ -3,7 +3,7 @@
   min-height: 100vh;
   background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f0f9ff 100%);
   padding: 30px 20px;
-  padding-top: 310px; /* Extra space for tall navbar (280px + 30px gap) */
+  padding-top: 310px; /* Extra space for tall navbar  */
 }
 
 @media (max-width: 768px) {
