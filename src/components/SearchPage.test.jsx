@@ -27,4 +27,15 @@ describe('SearchPage Tests', () => {
     expect(dropdown).toBeDefined()
   })
 
+  // TEST 3: Favourites sidebar exists
+  it('TEST 3: Favourites sidebar exists', () => {
+    render(
+      <BrowserRouter>
+        <SearchPage />
+      </BrowserRouter>
+    )
+    const sidebar = screen.getByText('Drag properties here or click the ★ icon')
+    expect(sidebar).toBeDefined()
+  })
+
 })
