@@ -38,4 +38,15 @@ describe('SearchPage Tests', () => {
     expect(sidebar).toBeDefined()
   })
 
+  // TEST 4: Search button exists
+  it('TEST 4: Search button exists', () => {
+    render(
+      <BrowserRouter>
+        <SearchPage />
+      </BrowserRouter>
+    )
+    const searchBtn = screen.getByRole('button', { name: /Search Properties/i })
+    expect(searchBtn).toBeDefined()
+  })
+
 })
