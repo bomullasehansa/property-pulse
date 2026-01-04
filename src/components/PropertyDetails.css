@@ -6,6 +6,12 @@
   padding-top: 310px; /* Extra space for tall navbar (280px + 30px gap) */
 }
 
+@media (max-width: 768px) {
+  .prop-wrapper {
+    padding-top: 200px;
+  }
+}
+
 .prop-container {
   max-width: 1100px;
   margin: 0 auto;

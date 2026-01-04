@@ -8,6 +8,13 @@
   align-items: flex-start;
 }
 
+@media (max-width: 768px) {
+  .search-page-container {
+    flex-direction: column;
+    padding-top: 150px; 
+  }
+}
+
 /* Main Content Area */
 .main-content {
   flex: 1;

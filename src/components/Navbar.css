@@ -11,6 +11,16 @@
   height: 350px;
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    padding: 10px;
+  }
+  .navbar.scrolled {
+    height: 90px;
+  }
+}
+
 .navbar.scrolled {
   height: 90px;
 }
